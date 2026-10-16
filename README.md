@@ -1,0 +1,1 @@
+# ParcialPractico-2026-Corte2_CL
