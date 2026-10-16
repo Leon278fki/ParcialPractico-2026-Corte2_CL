@@ -82,3 +82,30 @@ src/main/java/edu/eci/arsw/blueprints
    - Código fuente actualizado.
    - Swagger/OpenAPI habilitado.  
    - Clase `ApiResponse<T>` implementada.
+
+
+# Solucionario parcial práctico 2026 - Corte 2
+ 
+## Estudiante
+
+Camilo Alfonso Leon
+ 
+## solución
+ 
+### 1. Implementacion de versionamientos en la API
+ 
+En este punto lo unico que realizacion es el versionamiento de la API, en la carpeta de controllers en la clase de BlueprintsAPIController se ralizo el versionamiento de la API, agregando la anotacion @RequestMapping("/api/v1/blueprints") para indicar que la version de la API es la 1.
+ 
+### 2. Creacion de la clase ApiResponse.java
+ 
+Este punto se realizo creando la clase ApiResponse.java en la carpeta de model
+
+ 
+`public record ApiResponse<T>(int code, String message, T data) {}`
+ 
+### 3. Cambio de los codigos HTTP
+ 
+Se realizo el cambio de los codigos HTTP segun lo pedia la guia para la clase de `BlueprintsAPIController`.
+ 
+### 4. Implementacion de la clase `ApiResponse` en el controller para la respuesta estandar
+  se realizaron los cambios a los controllers para acatar los mensajes y el formato pedido
